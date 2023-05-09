@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div id="header">
+        <h1>Library</h1>
+        <div id="button-container">
+            <button class="button" id="book-button">Add New Book</button>
+        </div>
+    </div>
+    <div id="content">
+        <div id="form-container">
+            <form action="" method="post" id="book-form">
+                <fieldset id="labels">
+                    <div class="input">
+                        <label for="title">*Title:</label>
+                        <input type="text" name="title" id="title" placeholder="Battle Royale" required>
+                    </div>
+                    <div class="input">
+                        <label for="author">*Author:</label>
+                        <input type="text" name="author" id="author" placeholder="Koushun Takami" required>
+                    </div>
+                    <div class="input">
+                        <label for="page-count">*# of Pages:</label>
+                        <input type="number" name="page-count" id="page-count" placeholder="666" required>
+                    </div>
+                    <div class="input" id="checkbox-container">
+                        <label for="read-status">Read:</label>
+                        <input type="checkbox" name="read-status" id="read-status" checked>
+                    </div>
+                </fieldset>
+                <fieldset id="button-set">
+                    <button type="submit" id="submit-button" class="button">Add to Library</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
